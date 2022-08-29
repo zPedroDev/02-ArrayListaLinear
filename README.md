@@ -1,3 +1,3 @@
 # Pedro Tenerelli Gonçalves
 
-Email: pedrotenerelli257@gmail.com
+Email: pedro.goncalves22@fatec.sp.gov.br
