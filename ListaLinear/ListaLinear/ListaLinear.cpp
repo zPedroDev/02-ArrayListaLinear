@@ -12,13 +12,15 @@ void buscarElemento();
 //--------------------------
 
 
-const int MAX = 2;;
+const int MAX = 4;;
 int lista[MAX]{};
 int nElementos = 0;
+int Elemento = 0;
 
 
 int main()
 {
+	setlocale(LC_ALL, "");
 	menu();
 }
 
@@ -104,5 +106,30 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
+
+	if (nElementos == 0)
+	{
+		cout << " A lista esta vazia \n";
+	}
+	else
+	{
+		cout << "Digite o Elemento: ";
+		cin >> Elemento;
+
+		for (int n = 0; n <= nElementos; n++)
+		{
+			if (Elemento == lista[n])
+			{
+				cout << "Elemento Buscado: " << Elemento << endl;
+				cout << "Posição: " << n << endl;
+				n = nElementos;
+			}
+			else if (n == nElementos && Elemento != lista[n])
+			{
+				cout << "Não encontrado\n";
+			}
+		}
+	}
+
 
 }
